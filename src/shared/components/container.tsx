@@ -5,7 +5,7 @@ interface IProps extends React.PropsWithChildren {
 }
 
 const Container = ({ children, className }: IProps) => {
-  return <div className={cn('px-1rem py-1.25rem flex-1', className)}>{children}</div>;
+  return <div className={cn('px-1rem py-1.25rem container mx-auto', className)}>{children}</div>;
 };
 
 export default Container;

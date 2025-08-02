@@ -14,6 +14,8 @@ import PokemonCard from './pokemon-card';
 
 import { DynamicPagination } from '@/shared/components/dynamic-pagination';
 
+import { queryKeys } from '@/shared/constants/query-keys.constant';
+
 const PokemonListPageControl = () => {
   const { sizeSearchParams, offset } = useURLFilters();
 
@@ -23,7 +25,7 @@ const PokemonListPageControl = () => {
         limit: +sizeSearchParams,
         offset: offset,
       }),
-    queryKey: ['pokemon', { limit: +sizeSearchParams, offset: offset }],
+    queryKey: [queryKeys.pokemon.pageControlList, { limit: +sizeSearchParams, offset: offset }],
   });
 
   const meta = data?.meta;

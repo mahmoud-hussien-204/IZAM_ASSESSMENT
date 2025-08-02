@@ -95,7 +95,7 @@ async function interceptResponse<TData>(response: Response): Promise<IApiRespons
 
   return {
     message: data.message,
-    data: data.results,
+    data: data.results || data,
     meta: meta,
     status: response.status,
   };

@@ -1,11 +1,7 @@
 export const queryKeys = {
-  users: {
-    list: 'users',
-    detail: 'user',
-    create: 'create-user',
-    update: 'update-user',
-  },
-  settings: {
-    list: 'settings',
+  pokemon: {
+    pageControlList: 'pokemon-page-control-list',
+    infinityScrollList: 'pokemon-infinity-scroll-list',
+    details: 'pokemon-details',
   },
 };

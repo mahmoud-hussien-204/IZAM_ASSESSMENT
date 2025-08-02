@@ -68,7 +68,7 @@ const PokemonDetailsPage = () => {
                       />
                     </div>
 
-                    <ul>
+                    <ul className='gap-0.5rem flex items-center'>
                       {pokemon.types.map(({ type }) => (
                         <li key={type.name}>
                           {/* @ts-expect-error fix ts later */}
